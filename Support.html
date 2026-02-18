@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="Support.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Support</title>
+</head>
+
+<body>
+     <nav>
+        <img src="logo de l'entreprise.png"  height="130"  alt="image du logo de l'entreprise">
+        <div class="Catégories">
+            <a href="index.html" class="C">Acceuil</a>
+            <a href="Décoration et Ambiance.html" class="C">Décoration & Ambiance</a>
+            <a href="Machines à friandises.html" class="C">Machine à friandises</a>
+            <a href="Audiovisuels.html" class="C">Audiovisuels</a>
+            <a href="Sécurité.html" class="C">Sécurité</a>
+            <a href="Support.html" class="C" id="S">Support</a>
+            <div id="search">
+                <input type="search" placeholder="Rechercher">
+            </div>
+            <p><i class="fa-solid fa-cart-shopping"></i></p>
+
+        </div>
+    </nav>
+
+       <main>
+        <form action="https://api.web3forms.com/submit" method="POST" autocomplete="on">
+            <h1>Contactez-nous</h1>
+            <div class="séparation"></div>
+                <div class="corpsform">
+                    <input type="hidden" name="access_key" value="7aa25be1-162f-4c85-b7de-90871e29eb53">
+                    <div class="gauche">
+                            <div class="groupe">
+                                <label for="name">Votre Nom</label>
+                                <input type="text" name="name" autocomplete="name">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="groupe">
+                                <label for="email">Votre E-mail</label>
+                                <input type="email" name="email" autocomplete="email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="groupe">
+                                <label for="number">Téléphone</label>
+                                <input type="text" name="phone" autocomplete="number">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        
+                    </div>
+
+                    <div class="droite">
+                        <div class="groupe">
+                            <label><i class="fa-solid fa-comments"></i>Votre Message</label>
+                            <textarea name="message" autocomplete="off" placeholder="saisissez ici..."></textarea>
+                        </div>
+                    </div>
+
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">  
+                </div>
+
+            <div class="piedform" align="center">
+                <button type="submit">envoyer  <i class="fa-solid fa-paper-plane"></i></button>
+
+            </div>
+            
+        </form>
+        </main>
+
+        <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p><strong>Adresse :</strong>36 Avenue Henri Delecaux</p>
+                <p><strong>Téléphone :</strong> +33 7 46 51 16 46</p>
+                <p><strong>Email :</strong> eventbymaffe@gmail.com</p>
+                <p>Nous proposons des articles de qualité pour vos événements, avec une livraison rapide et un service
+                    client à votre écoute.</p>
+            </div>
+
+            <div class="footer-section" id="P">
+                <h3 id="M">Moyens de paiement</h3>
+                <div class="paiement-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Logo Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                        alt="Logo MasterCard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Logo PayPal">
+                </div>
+                <p>Satisfait ou remboursé</p>
+                <p>Livraison rapide en 48 heures</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Event by maffe-Tous droits réservés.
+        </div>
+
+    </footer>
+
+
+    </body>
+
+</html>

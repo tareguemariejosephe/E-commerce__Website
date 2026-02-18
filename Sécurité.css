@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    top: 0;
+    border: 2px solid transparent;
+    color: white;
+    background-color: #222;
+}
+
+.Catégories {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    padding-top: 2rem;
+}
+
+.Catégories p {
+    margin-top: 1rem;
+}
+
+.Catégories a {
+    color: white;
+}
+
+.C {
+    margin: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#S {
+    color: #f63e4e;
+    font-weight: bold;
+}
+
+
+
+.Catégories input {
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+}
+
+.Allproduits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.produits {
+    width: auto;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.produits:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.produits img {
+    max-width: 180px;
+    max-height: 180px;
+    object-fit: cover;
+    padding: 1rem 0;
+    margin: 1rem 4rem;
+
+
+}
+
+.produits h3 {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #AB550A;
+}
+
+.produits p {
+    color: #f63e4e;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.head {
+    border: 2px solid transparent;
+    text-align: center;
+    padding: 2rem;
+    background-color: #AB550A;
+    color: white;
+}
+
+.head p {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.Allproduits a {
+    display: inline-block;
+    padding: 1rem;
+    background: #e74c3c;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.Allproduits a:hover {
+    background: #c0392b;
+}
+
+* {
+    margin: 0;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem;
+
+}
+
+.footer-section h3 {
+    font-size: 1, 5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.paiement-logo {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.paiement-logo img {
+    width: 15%;
+    height: auto;
+    margin-left: 5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+#M {
+    margin-left: 5rem;
+}
+
+#P p {
+    margin-left: 5rem;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    .Catégories {
+        flex-direction: row;
+        padding: 0.7rem;
+    }
+
+    .C {
+        margin: 5px 0;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .Catégories input {
+        width: 80%;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+
+    .head h1 {
+        font-size: 1.5rem;
+    }
+
+    .Allproduits {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+    }
+
+    .produits {
+        margin: 1rem 0;
+        padding: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .produits img {
+        max-width: 100px;
+        max-height: 100px;
+        margin: 0 auto;
+    }
+
+    .produits h3 {
+        font-size: 13px;
+    }
+
+    .produits p {
+        font-size: 1rem;
+    }
+
+    .Allproduits a {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container h3 {
+        font-size: 1rem;
+    }
+
+    .footer-section p {
+        font-size: 13px;
+    }
+
+    .paiement-logo {
+        justify-content: center;
+        width: 70%;
+    }
+
+    #M,
+    #P p {
+        margin-left: 0;
+    }
+}
+
+
+/* tablette */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .Catégories {
+        flex-direction: row;
+        padding: 0.7rem;
+    }
+
+    .C {
+        margin: 5px 0;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .Catégories input {
+        width: 80%;
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    .Allproduits {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .produits {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+        width: 90%;
+    }
+
+    .produits img {
+        max-width: 160px;
+        max-height: 160px;
+        margin: auto;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container h3 {
+        font-size: 1rem;
+    }
+
+    .footer-section p {
+        font-size: 13px;
+    }
+
+    .paiement-logo {
+        justify-content: center;
+        width: 70%;
+    }
+
+    #M,
+    #P p {
+        margin-left: 0;
+    }
+
+}
