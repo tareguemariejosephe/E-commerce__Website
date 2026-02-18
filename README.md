@@ -23,4 +23,4 @@ L’objectif était de travailler la structure des pages, la mise en forme et le
   
 # Lien vers le projet
 Ici vous pouvez consulter le rendu final du site e-commerce développé en HTML et CSS.
-Cliquez ici pour voir le rendu :
+Cliquez ici pour voir le rendu : 🔗 [Live Demo](https://tareguemariejosephe.github.io/E-commerce__Website/)
